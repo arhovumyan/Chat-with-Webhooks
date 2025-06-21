@@ -60,7 +60,7 @@ export const signup = async (req, res) => {
     }
 }
 
-export const signin = async (req, res) => { 
+export const login = async (req, res) => { 
 
     const { email, password } = req.body
 
@@ -86,12 +86,12 @@ export const signin = async (req, res) => {
         })
 
     } catch (error) {
-        console.log("Error in signin controller", error.message)
+        console.log("Error in login controller", error.message)
         res.status(500).json({ message: "Internal server error" });
     }
 }
 
-export const signout = (req,res) => {
+export const logout = (req,res) => {
     try {
         res.cookie("jwt", "", {maxAge: 0,})
         res.status(200).json({ message: "Signout successful" });
