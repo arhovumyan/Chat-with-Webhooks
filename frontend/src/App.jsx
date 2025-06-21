@@ -1,14 +1,14 @@
 import Navbar from "./Components/Navbar.jsx";
 
-import HomePage from "./pages/HomePage.jsx";
-import SignUpPage from "./pages/SignUpPage.jsx";
+import HomePage from "./Pages/HomePage.jsx";
+import SignUpPage from "./Pages/SignUpPage.jsx";
 import LoginPage from "./Pages/LoginInPage.jsx";
-import SettingsPage from "./pages/SettingsPage.jsx";
-import ProfilePage from "./pages/ProfilePage.jsx";
+import SettingsPage from "./Pages/SettingsPage.jsx";
+import ProfilePage from "./Pages/ProfilePage.jsx";
 
 import { Routes, Route, Navigate } from "react-router-dom";
-import { useAuthStore } from "./store/useAuthStore";
-import { useThemeStore } from "./store/useThemeStore";
+import { useAuthStore } from "./store/useAuthStore.js";
+import { useThemeStore } from "./store/useThemeStore.js";
 import { useEffect } from "react";
 
 import { Loader } from "lucide-react";
